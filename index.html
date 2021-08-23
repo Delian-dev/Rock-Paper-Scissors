@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="game">
+        <div class="title-box">
+            <h1 class="title">Can you beat the AI?</h1>
+        </div>
+        <button class="btn btn-retry" onmousedown="location.reload();"><i class="fas fa-undo-alt"></i></button>
+        <div class="player-side">
+            <img src="./pictures/player.png" alt="player photo" class="player-icon">
+            <p class="player-score">Your score:</p>
+            <span class="player-modify">0</span>
+            <p class="player-choice">You didn't choose yet!</p>
+            <div class="player-buttons">
+                <button class="choice player-rock">Rock</button>
+                <button class="choice player-scissors">Scissors</button>
+                <button class="choice player-paper">Paper</button>
+            </div>
+        </div>
+        <div class="inter-players">
+            <h2 class="subtext">Waiting for result...</h2>
+            <button id="play-again" class="play-again">Play Again!</button>
+        </div>
+        <div class="computer-side">
+            <img src="./pictures/computer.png" alt="computer photo" class="computer-icon">
+            <p class="computer-score">Computer score:</p>
+            <span class="computer-modify">0</span>
+            <p class="computer-choice">The computer is waiting for your decision...</p>
+        </div>
+    </div>
+    <footer>
+        <p class="copyright">Delian-Dev Copyright &copy;  <script>document.write(new Date().getFullYear());</script></p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
